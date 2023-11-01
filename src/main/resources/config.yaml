@@ -21,8 +21,8 @@ runner: dataflow
 # [required] target: The target in format [PROJECT]:[DATASET] for dataset or [PROJECT]:[DATASET].[TABLE] for table
 copies:
 # Dataset copy
-- source: bigquery-public-data:world_bank_wdi
-  target: playground-s-11-c1ee8659:world_bank_wdi
+- source: bigquery-public-data:bigquery-public-data.world_bank_wdi.world_bank_wdi
+  target: playground-s-11-c1ee8659:bigquery-public-data.world_bank_wdi.world_bank_wdi
   numWorkers: 2
   maxNumWorkers: 2
 
