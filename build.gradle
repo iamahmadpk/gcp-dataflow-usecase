@@ -12,10 +12,9 @@ ext {
     gcsVersion="1.52.0"
 }
 
-task wrapper(type: Wrapper) {
-    gradleVersion = "4.10"
+wrapper {
+    gradleVersion = '4.10'    
 }
-
 repositories {
     mavenCentral()
 }
