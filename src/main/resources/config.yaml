@@ -1,5 +1,6 @@
 # [required] The GCP project id (not the number). You can find this in the GCP console.
-project: playground-s-11-c1ee8659
+project: playground-s-11-e05db209
+
 
 # [required] The type of runner. One of:
 # - dataflow (runs on GCP)
@@ -22,9 +23,10 @@ runner: dataflow
 copies:
 # Dataset copy
 - source: bigquery-public-data:world_bank_wdi.country_series_definitions
-  target: playground-s-11-c1ee8659:world_bank_wdi.country_series_definitions
+  target: playground-s-11-e05db209:world_bank_wdi.country_series_definitions
   numWorkers: 2
   maxNumWorkers: 2
+  targetDatasetLocation: US
 
 # Table copy to EU
 #- source: bigquery-public-data:world_bank_wdi.country_series_definitions
